@@ -1,0 +1,17 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #fff;
+    }
+
+    &__user{
+        display: flex;
+    }
+}

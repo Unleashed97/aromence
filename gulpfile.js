@@ -10,7 +10,7 @@ const rename = require('gulp-rename');
 const panini = require('panini');
 const del = require('del');
 const concat = require('gulp-concat')
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const autoPrefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
@@ -90,7 +90,7 @@ const styles = () => {
 
 // JS
 const scripts = () => {
-    return src(path.src.js, {base: srcPath + 'js/'})
+    return src(['src/js/script.js', path.src.js, '!src/js/script.min.js'], {base: srcPath + 'js/'})
         .pipe(concat('script.min.js'))
         .pipe(uglify())
         .pipe(dest(path.build.js))

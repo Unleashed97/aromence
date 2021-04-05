@@ -1,0 +1,25 @@
+.nav{
+    &__list{
+        display: flex;
+        align-items: center;
+    }
+
+    &__item{
+        margin-right: 84px;
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__link{
+        font-size: 18px;
+        text-transform: uppercase;
+        color: inherit;
+        display: block;
+        // transition: color .2s linear;
+
+        // &:hover{
+        //     color: $red;
+        // }
+    }
+}
