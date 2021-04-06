@@ -35,6 +35,41 @@
 
     }
 
+    &--moodo{
+        .section__inner{
+            height: 70vh;
+            border-radius: 30px;
+            border: 10px solid #FFE8CB;
+            position: relative;
+        }
+
+        .section__content{
+            height: 100%;
+        }
+
+        .section__text-block{
+            width: 320px;
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: translate3d(0, -50%, 0);
+            padding: 40px 0;
+            background-color: #fff;
+        }
+
+        .section__video{
+            position: absolute;
+            top: 50%;
+            right: -15%;
+
+            transform: translateY(-50%);
+        }
+
+        .section__text{
+            
+        }
+    }
+
     &__inner{
         display: flex;
         flex-direction: column;
